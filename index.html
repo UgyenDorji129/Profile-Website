@@ -1,0 +1,149 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link rel="stylesheet" href="style.css">
+    <title>Ugyen's Website</title>
+</head>
+<body>
+    <header>
+        <nav class="nav">
+            <div class="nav-left">
+                <h2 classs="name">Ugyen</h2>
+            </div>
+            <div class="nav-right">
+                <span class="ham" onclick="toggleFunction()">&#9776;</span>
+                <ul class="menu-1">
+                    <li><a href="#Home">Home</a></li>
+                    <li><a href="#About">About</a></li>
+                    <li><a href="#Skills">Skills</a></li>
+                    <li><a href="#Projects">Project</a></li>
+                    <li><a href="#Contact">Contact</a></li>
+                </ul>
+                <ul id="menu-2" class="menu-2" onclick="toggleFunction()">
+                    <li><a href="#Home">Home</a></li>
+                    <li><a href="#About">About</a></li>
+                    <li><a href="#Skills">Skills</a></li>
+                    <li><a href="#Projects">Project</a></li>
+                    <li><a href="#Contact">Contact</a></li>
+                </ul>
+            </div>
+        </nav>
+    </header>
+
+    <main>
+        <section class="home" id="Home">
+            <div class="main-content">
+                <div class="intro">
+                    <p>Hi,<br>I am <span>Ugyen Dorji</span><br>Software Engineer!</p>
+                    <a href="#Contact"><button>Contact Me</button></a>
+                </div>
+                
+                <div class="profile-photo">
+                <img src="assets/do.png" alt="Profile Image"></div>
+            </div>
+            <section class="logo">
+                <ul>
+                    <li><a href="https://www.instagram.com/hdhdhrvekaksbhehejdj/"><img src="assets/insta.png" alt="Instagram logo"></a></li>
+                    <li><a href="https://www.linkedin.com/in/ugyen-dorji-78472a1a2/"><img src="assets/linkdin.png" alt="Linkedin logo"></a></li>
+                    <li><a href="https://github.com/UgyenDorji129"><img src="assets/github.png" alt="github logo"></a></li>
+                </ul>
+            </section>
+        </section>
+
+        <section id="About">
+            <h2 class="about-head">About</h2>
+            <section class="about">
+                <div class="second-photo">
+                    <img src="assets/full.png" alt="Standing Photo">
+                </div>
+                <div class="myself-intro">
+                    <h3>I'am Ugyen Dorji</h3>
+                    <p>I am currently pursuing my bachelor's degree in Computer Science from Jaypee University of Information Technology. I love learning new skills and travelling.</p>
+                </div>
+             </section>
+        </section>
+
+        <section id="Skills" class="skill-div">
+            <h2 class="skill-head">Skills</h2>
+            <p class="mot">"Measuring programming progress by lines of code is like measuring aircraft building progress by weight"</p>
+            <section class="skill">
+                
+                <ul>
+                    <li>
+                        <img src="assets/app.png" alt="App">
+                        <p>Mobile App Developer</p>
+                    </li> 
+                    <li>
+                        <img src="assets/web.png" alt="Web">
+                        <p>Web Developer</p>
+                    </li> 
+                    <li>
+                        <img src="assets/problem.png" alt="PS">
+                        <p>Problem Solver</p>
+                    </li> 
+                </ul>
+            </section>
+        </section>
+
+        <section id="Projects">
+            <h2 class="project-head">Project</h2>
+            <section class="proj">
+                <ul>
+                    <li>
+                        <a href="https://github.com/UgyenDorji129/Hand-Written-Number-Detection-App-.git"><img src="assets/num.png" alt="number"></a>
+                        <h2>Hand Written number Detection</h2>
+                    </li>
+                    <li>
+                        <a href="https://github.com/UgyenDorji129/Authenticaton-and-OTP.git"><img src="assets/_api.png" alt="api"></a>
+                        <h2>Login and OTP API</h2>
+                    </li>
+                    <li>
+                        <a href="https://github.com/UgyenDorji129/Classification-of-Micro-plastcis-from-the-water.git"><img src="assets/plastic.png" alt="micro-plastic"></a>
+                        <h2>Classification Of micro-plastic</h2>
+                    </li>
+                </ul>
+            </section>
+        </section>
+
+        <section id="Contact">
+            <h2 class="contact-head">Contact</h2>
+            <form >
+                <input type="text" id="name" required class="name" placeholder="Enter your Name">
+                <input type="email" id="email" required class="email" placeholder="Enter your Email">
+                <textarea name="mess" id="mes" cols="30" rows="10" class="mess" required ></textarea>
+                <input type="submit" value="Summit" class="summit">
+            </form>
+        </section>
+       
+    </main>
+
+    <footer>
+        <h3>Ugyen Dorji</h3>
+        <section class="logo-end">
+            <ul>
+                <li><a href="https://www.instagram.com/hdhdhrvekaksbhehejdj/"><img src="assets/insta.png" alt="Instagram logo"></a></li>
+                <li><a href="https://www.linkedin.com/in/ugyen-dorji-78472a1a2/"><img src="assets/linkdin.png" alt="Linkedin logo"></a></li>
+                <li><a href="https://github.com/UgyenDorji129"><img src="assets/github.png" alt="github logo"></a></li>
+            </ul>
+        </section>
+        <p>© 2023 copyright all right reserved</p>
+    </footer>
+    <script>
+        function handleMenu(){
+
+        }
+        function toggleFunction(){
+            var x = document.getElementById("menu-2")
+            if(x.style.display == "block"){
+                x.style.display = "none";
+            }else{
+                x.style.display = "block";
+            }
+        }
+    </script>
+    
+</body>
+</html>
